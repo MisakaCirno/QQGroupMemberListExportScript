@@ -20,12 +20,17 @@
  */
 
 (function () {
-    // 0.如果当前的网页链接不为https://qun.qq.com/qun-manage/#/member-manage/base-manage，则不执行脚本
-    if (window.location.href != "https://qun.qq.com/qun-manage/#/member-manage/base-manage") {
-        console.log("当前网页链接不为https://qun.qq.com/qun-manage/#/member-manage/base-manage，脚本不执行");
+    // 0.如果当前的网页链接不为targetURL，则不执行脚本
+
+    // let targetURL = "https://qun.qq.com/qun-manage/#/member-manage/base-manage";
+    // 在不知道什么时候换了新的网址
+    let targetURL = "https://qun.qq.com/#/member-manage/base-manage";
+    if (window.location.href != targetURL) {
+        console.log("当前网页链接不为" + targetURL + "，脚本不执行");
+        alert("当前网页链接不为" + targetURL + "，脚本不执行");
         return;
     }
-    console.log("当前网页链接为https://qun.qq.com/qun-manage/#/member-manage/base-manage，脚本开始执行");
+    console.log("当前网页链接为" + targetURL + "，脚本开始执行");
 
     // 1.变量定义
     let isLogDebug = true;
