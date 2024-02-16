@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         QQ群成员列表导出工具
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  将QQ群成员的列表存储为csv格式文件
 // @author       御琪幽然
 // @match        https://qun.qq.com/*
